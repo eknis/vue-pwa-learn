@@ -30,10 +30,16 @@
 <meta property="og:description" content="lorem">
 <meta property="og:image" content="http://aimg-static.gree.net/ggp/img/lp/pc/clinoppe/og_image_nomal.png">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="公式サ">
-<meta name="twitter:description" content="lorem ipsum">
-<meta name="twitter:image" content="http://aimg-static.gree.net/ggp/img/lp/pc/clinoppe/og_image_nomal.png">
+<meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@_ekni">
+    <meta name="twitter:title" content="テストタイトル">
+    <meta name="twitter:description" content="テストです。">
+    <meta name="twitter:image" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/msapplication-icon-144x144.png">
+    <meta name="twitter:player" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/waterfall.mp4">
+    <meta name="twitter:player:width" content="640">
+    <meta name="twitter:player:height" content="360">
+    <meta name="twitter:player:stream" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/waterfall.mp4">
+    <meta name="twitter:player:stream:content_type" content="video/mp4;">
     <% for (var chunk of webpack.chunks) {
         for (var file of chunk.files) {
           if (file.match(/\.(js|css)$/)) { %>
